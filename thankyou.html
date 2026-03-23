@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Thank You — EduReach</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Lora:ital,wght@0,600;1,400&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --blue: #2563eb; --blue-light: #eff6ff; --blue-mid: #dbeafe;
+      --ink: #1e293b; --muted: #64748b; --border: #e2e8f0; --white: #ffffff; --bg: #f8fafc;
+    }
+    body {
+      font-family: 'Nunito', sans-serif;
+      background: var(--bg); color: var(--ink);
+      min-height: 100vh; display: flex;
+      flex-direction: column; align-items: center; justify-content: center;
+      padding: 2rem;
+    }
+    .logo {
+      font-size: 1.4rem; font-weight: 800; color: var(--blue);
+      margin-bottom: 2rem; letter-spacing: -0.5px;
+    }
+    .logo span { color: var(--ink); }
+    .card {
+      background: var(--white); border: 1px solid var(--border);
+      border-radius: 20px; padding: 3rem 2.5rem;
+      max-width: 460px; width: 100%; text-align: center;
+      box-shadow: 0 4px 24px rgba(37,99,235,0.07);
+    }
+    .check-circle {
+      width: 72px; height: 72px; border-radius: 50%;
+      background: var(--blue-mid); border: 3px solid var(--blue);
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 1.5rem; font-size: 2rem;
+    }
+    h1 {
+      font-family: 'Lora', serif; font-size: 2rem;
+      margin-bottom: 0.8rem; color: var(--ink);
+    }
+    h1 em { font-style: italic; color: var(--blue); }
+    p { color: var(--muted); line-height: 1.75; font-size: 0.95rem; margin-bottom: 0.6rem; }
+    .highlight {
+      background: var(--blue-light); border: 1px solid var(--blue-mid);
+      border-radius: 10px; padding: 1rem 1.2rem;
+      margin: 1.5rem 0; font-size: 0.88rem; color: var(--blue); font-weight: 700;
+    }
+    .back-btn {
+      display: inline-block; margin-top: 1.5rem;
+      background: var(--blue); color: var(--white);
+      padding: 0.85rem 2rem; border-radius: 12px;
+      text-decoration: none; font-weight: 800; font-size: 0.95rem;
+      transition: opacity 0.2s;
+    }
+    .back-btn:hover { opacity: 0.88; }
+  </style>
+</head>
+<body>
+  <div class="logo">Edu<span>Reach</span></div>
+  <div class="card">
+    <div class="check-circle">🎉</div>
+    <h1>You're <em>Enrolled!</em></h1>
+    <p>Thank you for signing up. We've received your details and our team will reach out to you within <strong>24 hours</strong> to confirm your free trial class.</p>
+    <div class="highlight">
+      📞 Expect a call from us soon to schedule your session!
+    </div>
+    <p>Meanwhile, make sure to check your email for a confirmation message.</p>
+    <a href="index.html" class="back-btn">← Back to Home</a>
+  </div>
+</body>
+</html>
